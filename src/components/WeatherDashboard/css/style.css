@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+
+body {
+    font-family: 'Poiret One';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url(../image/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 5.2%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchTerm {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-weight:900;
+    font-size: 1rem;
+}
+
+.searchButton {
+    width: 80px;
+    height: 48px;
+    border: 1px solid #ccc;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.searchButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.widget {
+    position: relative;
+    left: 20px;
+    width: 120%;
+    max-width: 450px; /* Adjusted max-width for a larger widget */
+    background-color: #333; /* Light black background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Bright white text color */
+}
+
+.weatherIcon {
+    text-align: center;
+    font-size: 4rem;
+    color: #007bff; /* Blue icon color */
+}
+
+.temperature {
+    text-align: center;
+    font-size: 2.5rem; /* Increased font size for temperature */
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.5rem; /* Increased font size for weather description */
+    color: #ccc; /* Light gray text color */
+    margin-bottom: 20px;
+}
+
+.place {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem; /* Increased font size for location */
+    color: #007bff;
+}
+
+.date {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.9rem; /* Reduced font size for date */
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.extra-temp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.temp-info-minmax {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #555; /* Dark blue background */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.two-sided-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.weather-extra-info {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #007bff; /* Light blue background */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.extra-info-leftside {
+    margin-left: 10px;
+    font-size: 1rem; /* Increased font size for extra information */
+    color: #fff; /* Bright white text color */
+}
+
